@@ -23,7 +23,4 @@ io.on('connection', (socket) => {
     socket.emit('test message', 'hello bro');
 });
 
-http.listen(process.env.PORT, (a,b,c) => {
-    console.log('listening');
-    console.log(a, b, c);
-}); 
+http.listen(process.env.PORT); 
