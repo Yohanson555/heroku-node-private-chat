@@ -1,0 +1,24 @@
+{
+  "name": "heroku-node-private-chat",
+  "version": "1.0.0",
+  "description": "Test heroku application with chat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yohanson555/heroku-node-private-chat.git"
+  },
+  "author": "Yohanson555",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yohanson555/heroku-node-private-chat/issues"
+  },
+  "homepage": "https://github.com/Yohanson555/heroku-node-private-chat#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "lodash": "^4.17.15"
+  }
+}
