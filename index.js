@@ -23,4 +23,10 @@ io.on('connection', (socket) => {
     socket.emit('test message', 'hello bro');
 });
 
-http.listen(process.env.PORT); 
+var port = 5000;
+
+if (process.env.PORT) port = process.env.PORT;
+
+http.listen(port, (a,b,c) => {
+    console.log('listening', port);
+}); 
