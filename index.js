@@ -5,6 +5,12 @@ const io = require('socket.io')(http);
 
 app.use(express.static('public_html'));
 
+app.get('/env', (req, res) => {
+    let env = JSON.stringify(process.env);
+
+    res.send(env);
+});
+
 io.on('connection', (socket) => {
     console.log("user connected");
 
@@ -27,6 +33,4 @@ var port = 5000;
 
 if (process.env.PORT) port = process.env.PORT;
 
-http.listen(port, (a,b,c) => {
-    console.log('listening', port);
-}); 
+http.listen(port);
